@@ -30,7 +30,8 @@ body{
 .bt{
     display: flex;
     justify-content: center;
-    margin-top: -20px;
+    margin-right: 50px;
+    margin-top: -30px;
 }
 .wrapper p{
     font-size: 12px;
@@ -56,9 +57,9 @@ button{
     border-radius: 50px;
     border: 1px solid goldenrod;
     background-color: white;
-    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+ box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
 }
-.items ul{
+#items ul{
     display: grid;
     grid-template-columns: repeat(3,1fr);
     list-style: none;
@@ -75,6 +76,57 @@ button{
     background-color: white;
     padding: 20px;
     border-radius: 10px;
+}
+.mq{
+    display: none;
+}
+.mdq{
+    background-color: white;
+    padding: 20px;
+    border-radius: 10px ;
+}
+.sl ul{
+    display: flex;
+    justify-content: space-between;
+    list-style: none;
+    margin-top: 20px;
+}
+.sl ul h2{
+    font-size: 12px;
+}
+.chk{
+    display: flex;
+    justify-content: space-between;
+    margin-top: 20px;
+}
+.chk h5{
+    font: 1em;
+}
+.chk-inf{
+    text-align: center;
+    background-color: #FCF8F5;
+    padding: 5px;
+    width: 300px;
+    margin-left: auto;
+    margin-right: auto;
+}
+.confirm button{
+    background-color: orangered;
+    color: #fff;
+    padding: 10px;
+    border: none;
+    width: 200px;
+    margin-top: 20px;
+}
+.holder{
+    display: flex;
+    justify-content: space-between;
+}
+.cancel{
+    border-radius: 50%;
+    border: 1px solid goldenrod;
+    padding: 5px;
+    background-color: #fff;
 }
 .cts h1{
     color: orangered;
@@ -99,21 +151,33 @@ button{
     }
   
     .product {
-      width: 100%;
+        margin-left: auto;
+        margin-right: auto;
+      width: 380px;
     }
   
     .bt {
       flex-direction: column;
     }
   
-    .items ul {
+    #items ul {
       grid-template-columns: 1fr;
+      
+    }
+    #items ul li img{
+        border: 2px solid orangered;
     }
     .cts{
     
         width: 300px;
         padding: 20px;
         border-radius: 10px;
+    }
+    .ct{
+        display: none;
+    }
+    .mq{
+        display: block;
     }
   }
   
